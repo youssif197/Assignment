@@ -1,0 +1,36 @@
+Q1) def count_vowels(text):
+    """Counts the vowels (a, e, i, o, u) in a given string, case-insensitive."""
+    vowels = "aeiou"
+    return sum(1 for char in text.lower() if char in vowels)
+
+# Example Input
+text = "Hello World"
+# Expected Output: 3
+result = count_vowels(text)
+print(result)  # Output: 3
+
+
+
+Q2)def find_max(numbers):
+    """Finds the maximum value in a list of integers without using max()."""
+    if not numbers:  # Handle empty list
+        return None
+    
+    max_value = numbers[0]
+    for number in numbers:
+        if number > max_value:
+            max_value = number
+    return max_value
+
+# Example Input
+numbers = [3, 5, 2, 8, 1]
+# Expected Output: 8
+result = find_max(numbers)
+print(result)  # Output: 8
+
+# Example with an empty list
+empty_list = []
+print(find_max(empty_list))  # Output: None
+
+
+
